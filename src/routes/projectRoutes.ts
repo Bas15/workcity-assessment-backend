@@ -15,7 +15,7 @@ const router = Router();
 router.use(protect);
 
 router.post("/", validateProject, createProject);
-router.get("/", getProjects);
+router.get("/", getProjects); //
 router.get("/:id", getProjectById);
 router.get("/client/:clientId", getProjectsByClient);
 router.put("/:id", validateProject, updateProject);
